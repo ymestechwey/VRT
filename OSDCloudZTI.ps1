@@ -9,7 +9,7 @@ Write-Host  -ForegroundColor Green "Importing OSD PowerShell Module"
 Import-Module OSD -Force
 
 #Start OSDCloud ZTI the RIGHT way
-Write-Host  -ForegroundColor Green "Start OSDCloud"
+Start-OSDCloud -OSName 'Windows 11 22H2 x64' -OSLanguage nl-nl -OSEdition Enterprise -ZTI
 Start-OSDCloud 
 
 #Restart from WinPE
